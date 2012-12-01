@@ -58,4 +58,4 @@ None.
 
 =head1 TEMPLATE
 
-/templates/login.tmpl
+templates/login.tmpl

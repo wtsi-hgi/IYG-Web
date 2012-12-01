@@ -50,7 +50,7 @@ else{
     # Get all Traits for which the barcode has a result.
     my $traitResultSet = $app->dbh->query_all_traits_with_results({
         is_barcode => $barcode_flag,
-        barcode_or_publicid => $barcode_or_publicid
+        barcode_or_publicid => $barcode_or_publicid,
     });
 
     my @traitList;

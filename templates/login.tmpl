@@ -24,10 +24,9 @@
             <form action="/traits" method="post">
                 <textarea id="barcode" name="barcode" style="display:none;"></textarea>
                 <!-- TODO Insert your PGP Public Key -->
-                <textarea id="pubkey" style="display:none;">-----BEGIN PGP PUBLIC KEY BLOCK-----
-Version: VERSION
-
-SIGNATURE
+                <textarea id="pubkey" style="display:none;">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: <TMPL_INCLUDE NAME="gpg_key.tmpl">
 -----END PGP PUBLIC KEY BLOCK-----</textarea>
                 <div class="input-prepend input-append">
                     <span class="add-on"><i class="icon-barcode"></i></span><input type="text" id="in" required /><button class="btn btn-primary" type="submit" onclick="encrypt()"><i class="icon-ok-sign icon-white"></i> Submit</button>
